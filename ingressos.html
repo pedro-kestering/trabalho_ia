@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingressos | Horizonte Festival</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #111111;
+            color: #f2f0e9;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        header {
+            border-bottom: 1px solid #303030;
+        }
+
+        .nav {
+            max-width: 1180px;
+            min-height: 80px;
+            margin: auto;
+            padding: 0 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: #e5b94c;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            color: #d7d7d7;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover,
+        nav .ativo {
+            color: #e5b94c;
+        }
+
+        main {
+            max-width: 1180px;
+            margin: auto;
+            padding: 90px 25px;
+        }
+
+        .cabecalho {
+            margin-bottom: 50px;
+        }
+
+        .cabecalho h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        .cabecalho p {
+            color: #888888;
+        }
+
+        .ingressos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .ingresso {
+            border: 1px solid #303030;
+            padding: 35px 28px;
+        }
+
+        .ingresso.destaque {
+            border-color: #e5b94c;
+        }
+
+        .ingresso h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .preco {
+            color: #e5b94c;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        .ingresso ul {
+            list-style: none;
+            border-top: 1px solid #303030;
+            padding-top: 20px;
+        }
+
+        .ingresso li {
+            color: #a5a5a5;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        .botao {
+            display: block;
+            margin-top: 30px;
+            padding: 13px;
+            text-align: center;
+            background: #e5b94c;
+            color: #111111;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        footer {
+            border-top: 1px solid #303030;
+            padding: 30px 25px;
+            color: #777777;
+            font-size: 13px;
+        }
+
+        .footer-content {
+            max-width: 1180px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 800px) {
+            .nav {
+                flex-direction: column;
+                padding: 20px;
+                gap: 20px;
+            }
+
+            nav {
+                gap: 14px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .ingressos {
+                grid-template-columns: 1fr;
+            }
+
+            .cabecalho h1 {
+                font-size: 45px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="nav">
+        <a href="index.html" class="logo">HORIZONTE</a>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="lineup.html">Line-up</a>
+            <a href="ingressos.html" class="ativo">Ingressos</a>
+            <a href="informacoes.html">Informações</a>
+            <a href="faq.html">Dúvidas</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <div class="cabecalho">
+        <h1>Ingressos</h1>
+        <p>Escolha a experiência que combina com você.</p>
+    </div>
+
+    <section class="ingressos">
+
+        <article class="ingresso">
+            <h2>Individual</h2>
+            <div class="preco">R$ 180</div>
+
+            <ul>
+                <li>Acesso a 1 dia do festival</li>
+                <li>Acesso aos dois palcos</li>
+                <li>Área geral do evento</li>
+                <li>Acesso às áreas de alimentação</li>
+            </ul>
+
+            <a href="#" class="botao">Selecionar</a>
+        </article>
+
+        <article class="ingresso destaque">
+            <h2>Passaporte</h2>
+            <div class="preco">R$ 420</div>
+
+            <ul>
+                <li>Acesso aos 3 dias</li>
+                <li>Acesso aos dois palcos</li>
+                <li>Área geral do evento</li>
+                <li>Acesso às áreas de alimentação</li>
+                <li>Entrada antecipada</li>
+            </ul>
+
+            <a href="#" class="botao">Selecionar</a>
+        </article>
+
+        <article class="ingresso">
+            <h2>VIP</h2>
+            <div class="preco">R$ 690</div>
+
+            <ul>
+                <li>Acesso aos 3 dias</li>
+                <li>Área VIP próxima ao palco</li>
+                <li>Entrada antecipada</li>
+                <li>Banheiros exclusivos</li>
+                <li>Área de descanso</li>
+            </ul>
+
+            <a href="#" class="botao">Selecionar</a>
+        </article>
+
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <span>Horizonte Festival</span>
+        <span>2026 · Pedro e Nome do Integrante</span>
+    </div>
+</footer>
+
+</body>
+</html>

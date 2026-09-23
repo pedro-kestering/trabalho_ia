@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dúvidas | Horizonte Festival</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #111111;
+            color: #f2f0e9;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        header {
+            border-bottom: 1px solid #303030;
+        }
+
+        .nav {
+            max-width: 1180px;
+            min-height: 80px;
+            margin: auto;
+            padding: 0 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: #e5b94c;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            color: #d7d7d7;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover,
+        nav .ativo {
+            color: #e5b94c;
+        }
+
+        main {
+            max-width: 1180px;
+            margin: auto;
+            padding: 90px 25px;
+        }
+
+        .cabecalho {
+            margin-bottom: 50px;
+        }
+
+        .cabecalho h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        .cabecalho p {
+            color: #888888;
+        }
+
+        .conteudo {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .pergunta {
+            border-top: 1px solid #303030;
+            padding: 22px 0;
+        }
+
+        .pergunta h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 19px;
+            margin-bottom: 8px;
+        }
+
+        .pergunta p {
+            color: #999999;
+            font-size: 14px;
+        }
+
+        .formulario {
+            border-top: 1px solid #303030;
+            padding-top: 22px;
+        }
+
+        .formulario h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 25px;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            color: #bdbdbd;
+            font-size: 14px;
+            margin-bottom: 7px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            background: #181818;
+            border: 1px solid #303030;
+            color: white;
+            padding: 13px;
+            margin-bottom: 20px;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        textarea {
+            height: 130px;
+            resize: vertical;
+        }
+
+        button {
+            border: 1px solid #e5b94c;
+            background: #e5b94c;
+            color: #111111;
+            padding: 13px 25px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: transparent;
+            color: #e5b94c;
+        }
+
+        footer {
+            border-top: 1px solid #303030;
+            padding: 30px 25px;
+            color: #777777;
+            font-size: 13px;
+        }
+
+        .footer-content {
+            max-width: 1180px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 800px) {
+            .nav {
+                flex-direction: column;
+                padding: 20px;
+                gap: 20px;
+            }
+
+            nav {
+                gap: 14px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .conteudo {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .cabecalho h1 {
+                font-size: 45px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="nav">
+        <a href="index.html" class="logo">HORIZONTE</a>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="lineup.html">Line-up</a>
+            <a href="ingressos.html">Ingressos</a>
+            <a href="informacoes.html">Informações</a>
+            <a href="faq.html" class="ativo">Dúvidas</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <div class="cabecalho">
+        <h1>Dúvidas</h1>
+        <p>As principais informações sobre o festival.</p>
+    </div>
+
+    <div class="conteudo">
+
+        <section>
+
+            <div class="pergunta">
+                <h2>Qual a idade mínima?</h2>
+                <p>
+                    A entrada é permitida para maiores de 16 anos.
+                    Menores devem seguir as regras de autorização do evento.
+                </p>
+            </div>
+
+            <div class="pergunta">
+                <h2>O ingresso é nominal?</h2>
+                <p>
+                    Sim. O ingresso deve estar associado ao documento
+                    apresentado na entrada do festival.
+                </p>
+            </div>
+
+            <div class="pergunta">
+                <h2>Posso sair e voltar ao festival?</h2>
+                <p>
+                    Sim. O visitante pode sair e retornar no mesmo dia
+                    utilizando a pulseira de acesso.
+                </p>
+            </div>
+
+            <div class="pergunta">
+                <h2>Haverá praça de alimentação?</h2>
+                <p>
+                    Sim. O evento terá diferentes opções de alimentação
+                    e bebidas dentro do espaço.
+                </p>
+            </div>
+
+            <div class="pergunta">
+                <h2>Posso levar minha câmera?</h2>
+                <p>
+                    Câmeras pequenas são permitidas. Equipamentos
+                    profissionais dependem de autorização prévia.
+                </p>
+            </div>
+
+            <div class="pergunta">
+                <h2>O festival acontece com chuva?</h2>
+                <p>
+                    Sim. O evento possui áreas cobertas e segue normalmente
+                    em caso de chuva, salvo condições de segurança.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="formulario">
+
+            <h2>Entre em contato</h2>
+
+            <form>
+
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Seu nome">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="seuemail@email.com">
+
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" placeholder="Assunto da mensagem">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" placeholder="Digite sua mensagem"></textarea>
+
+                <button type="submit">Enviar mensagem</button>
+
+            </form>
+
+        </section>
+
+    </div>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <span>Horizonte Festival</span>
+        <span>2026 · Pedro e Nome do Integrante</span>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações | Horizonte Festival</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #111111;
+            color: #f2f0e9;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        header {
+            border-bottom: 1px solid #303030;
+        }
+
+        .nav {
+            max-width: 1180px;
+            min-height: 80px;
+            margin: auto;
+            padding: 0 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: #e5b94c;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            color: #d7d7d7;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover,
+        nav .ativo {
+            color: #e5b94c;
+        }
+
+        main {
+            max-width: 1180px;
+            margin: auto;
+            padding: 90px 25px;
+        }
+
+        .cabecalho {
+            margin-bottom: 50px;
+        }
+
+        .cabecalho h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        .cabecalho p {
+            color: #888888;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .bloco {
+            border-top: 1px solid #303030;
+            padding-top: 25px;
+            margin-bottom: 35px;
+        }
+
+        .bloco h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .bloco p {
+            color: #a5a5a5;
+            margin-bottom: 8px;
+        }
+
+        .bloco ul {
+            padding-left: 20px;
+            color: #a5a5a5;
+        }
+
+        .bloco li {
+            margin-bottom: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 330px;
+            border: 0;
+            margin-top: 15px;
+        }
+
+        footer {
+            border-top: 1px solid #303030;
+            padding: 30px 25px;
+            color: #777777;
+            font-size: 13px;
+        }
+
+        .footer-content {
+            max-width: 1180px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 800px) {
+            .nav {
+                flex-direction: column;
+                padding: 20px;
+                gap: 20px;
+            }
+
+            nav {
+                gap: 14px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .cabecalho h1 {
+                font-size: 45px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="nav">
+        <a href="index.html" class="logo">HORIZONTE</a>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="lineup.html">Line-up</a>
+            <a href="ingressos.html">Ingressos</a>
+            <a href="informacoes.html" class="ativo">Informações</a>
+            <a href="faq.html">Dúvidas</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <div class="cabecalho">
+        <h1>Informações</h1>
+        <p>Confira tudo o que você precisa saber antes de chegar.</p>
+    </div>
+
+    <div class="grid">
+
+        <div>
+
+            <section class="bloco">
+                <h2>Local</h2>
+                <p>Galpão Aurora</p>
+                <p>Rua das Oficinas, 270</p>
+                <p>Barra Funda, São Paulo, SP</p>
+                <p>CEP 01156-000</p>
+            </section>
+
+            <section class="bloco">
+                <h2>Como chegar</h2>
+                <p>
+                    O local fica próximo à estação Barra Funda.
+                    Também existem linhas de ônibus que passam pela região.
+                </p>
+                <p>
+                    Para quem for de carro, existem estacionamentos
+                    particulares próximos ao evento.
+                </p>
+            </section>
+
+            <section class="bloco">
+                <h2>Horários</h2>
+                <p>Sexta-feira: 17h às 01h</p>
+                <p>Sábado: 14h às 02h</p>
+                <p>Domingo: 14h às 23h</p>
+            </section>
+
+        </div>
+
+        <div>
+
+            <section class="bloco">
+                <h2>Mapa</h2>
+
+                <iframe
+                    src="https://www.google.com/maps?q=Barra+Funda+São+Paulo&output=embed"
+                    loading="lazy">
+                </iframe>
+            </section>
+
+            <section class="bloco">
+                <h2>O que pode levar</h2>
+
+                <ul>
+                    <li>Documento de identificação</li>
+                    <li>Protetor solar</li>
+                    <li>Óculos de sol</li>
+                    <li>Celular</li>
+                    <li>Garrafa de água vazia</li>
+                </ul>
+            </section>
+
+            <section class="bloco">
+                <h2>O que não pode levar</h2>
+
+                <ul>
+                    <li>Bebidas alcoólicas externas</li>
+                    <li>Objetos cortantes</li>
+                    <li>Armas</li>
+                    <li>Fogos de artifício</li>
+                    <li>Recipientes de vidro</li>
+                </ul>
+            </section>
+
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <span>Horizonte Festival</span>
+        <span>2026 · Pedro e Nome do Integrante</span>
+    </div>
+</footer>
+
+</body>
+</html>

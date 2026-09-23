@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizonte Festival</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #111111;
+            color: #f2f0e9;
+            font-family: 'DM Sans', sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            width: 100%;
+            border-bottom: 1px solid #303030;
+            background: #111111;
+        }
+
+        .nav {
+            max-width: 1180px;
+            margin: auto;
+            min-height: 80px;
+            padding: 0 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: #e5b94c;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            color: #d7d7d7;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover,
+        nav .ativo {
+            color: #e5b94c;
+        }
+
+        .hero {
+            min-height: 650px;
+            max-width: 1180px;
+            margin: auto;
+            padding: 100px 25px;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .data {
+            color: #e5b94c;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(55px, 9vw, 105px);
+            line-height: 0.95;
+            letter-spacing: -5px;
+            margin-bottom: 30px;
+        }
+
+        .hero p {
+            max-width: 620px;
+            color: #bdbdbd;
+            font-size: 18px;
+            margin-bottom: 35px;
+        }
+
+        .botao {
+            display: inline-block;
+            padding: 14px 25px;
+            background: #e5b94c;
+            color: #111111;
+            text-decoration: none;
+            font-weight: 700;
+            border: 1px solid #e5b94c;
+        }
+
+        .botao:hover {
+            background: transparent;
+            color: #e5b94c;
+        }
+
+        .local {
+            margin-top: 50px;
+            color: #888888;
+            font-size: 14px;
+        }
+
+        .destaques {
+            max-width: 1180px;
+            margin: auto;
+            padding: 80px 25px;
+            border-top: 1px solid #303030;
+        }
+
+        .titulo-secao {
+            margin-bottom: 40px;
+        }
+
+        .titulo-secao h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 34px;
+        }
+
+        .titulo-secao p {
+            color: #888888;
+            margin-top: 5px;
+        }
+
+        .artistas {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .artista {
+            border: 1px solid #303030;
+            padding: 25px;
+        }
+
+        .artista h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        .artista p {
+            color: #888888;
+            font-size: 14px;
+        }
+
+        footer {
+            border-top: 1px solid #303030;
+            padding: 30px 25px;
+            color: #777777;
+            font-size: 13px;
+        }
+
+        .footer-content {
+            max-width: 1180px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 750px) {
+            .nav {
+                flex-direction: column;
+                padding: 20px;
+                gap: 20px;
+            }
+
+            nav {
+                gap: 14px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                min-height: 550px;
+                padding: 70px 25px;
+            }
+
+            h1 {
+                font-size: 58px;
+                letter-spacing: -3px;
+            }
+
+            .artistas {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="nav">
+        <a href="index.html" class="logo">HORIZONTE</a>
+
+        <nav>
+            <a href="index.html" class="ativo">Início</a>
+            <a href="lineup.html">Line-up</a>
+            <a href="ingressos.html">Ingressos</a>
+            <a href="informacoes.html">Informações</a>
+            <a href="faq.html">Dúvidas</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <div class="data">
+                14, 15 e 16 de novembro de 2026
+            </div>
+
+            <h1>Horizonte<br>Festival</h1>
+
+            <p>
+                Três dias de música alternativa, indie e novos sons
+                reunidos em um único espaço. Um festival para quem
+                gosta de descobrir artistas e viver a música de perto.
+            </p>
+
+            <a href="ingressos.html" class="botao">Comprar ingresso</a>
+
+            <div class="local">
+                Galpão Aurora, São Paulo, SP
+            </div>
+
+        </div>
+    </section>
+
+    <section class="destaques">
+
+        <div class="titulo-secao">
+            <h2>Atrações principais</h2>
+            <p>Alguns dos nomes que estarão no Horizonte.</p>
+        </div>
+
+        <div class="artistas">
+
+            <div class="artista">
+                <h3>Marina Vale</h3>
+                <p>Sexta-feira, 22h30 · Palco Horizonte</p>
+            </div>
+
+            <div class="artista">
+                <h3>Os Viajantes</h3>
+                <p>Sábado, 21h00 · Palco Aurora</p>
+            </div>
+
+            <div class="artista">
+                <h3>Caio Nunes</h3>
+                <p>Domingo, 20h30 · Palco Horizonte</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <span>Horizonte Festival</span>
+        <span>2026 · Pedro e Nome do Integrante</span>
+    </div>
+</footer>
+
+</body>
+</html>
